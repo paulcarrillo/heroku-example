@@ -7,7 +7,7 @@ var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
-var mangoUri = process.env.MONGODB_URI || 'mongodb://localhost/heroku-example';
+var mongoUri = process.env.MONGODB_URI || 'mongodb://localhost/heroku-example';
 mongoose.connect(mongoUri);
 
 var routes = require('./routes/index');
